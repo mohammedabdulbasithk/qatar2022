@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/containerview"
+        android:layout_above="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+    </LinearLayout>
+
+    <com.skydoves.androidbottombar.AndroidBottomBarView
+        android:id="@+id/menu"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/primaryColor"
+        app:bottomBar_duration="300"
+        app:bottomBar_flavor="icon"
+        app:bottomBar_indicator_color="@color/white"
+        app:bottomBar_indicator_height="4dp"
+        app:bottomBar_indicator_padding="6dp"
+        app:bottomBar_indicator_radius="12dp"
+        app:bottomBar_indicator_visible="true"
+        app:bottomBar_menuAnimation="overshoot"
+        app:bottomBar_selectedIndex="0"
+        />
+
+</RelativeLayout>
